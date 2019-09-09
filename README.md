@@ -10,3 +10,7 @@ Felipe Avila Gritti | [linkedIn](http://www.linkedin.com/in/felipeavilag) | [Git
 Lara Zaniboni Cardoso | [linkedIn](https://www.linkedin.com/in/lara-zaniboni-cardoso-83a656181/) | [GitHub](https://github.com/larazaniboni) | [Mail](lara.zaniboni@hotmail.com)
 
 Mariana Serrão Ribeiro | [linkedIn](https://www.linkedin.com/in/mariana-serr%C3%A3o-ribeiro-495656181/) | [GitHub](https://github.com/marimpj) | [Mail](marimpj@hotmail.com)
+
+Marcelo Dias Craveiro Lima | [linkedIn](https://www.linkedin.com/in/marcelo-lima-850656181/) | [GitHub](https://github.com/MarceloDCLima) 
+
+
