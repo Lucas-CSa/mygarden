@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: #2ecc71;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 1000px;
+    height: 510px;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 2px 3px #353b48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-wrapper{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 12%;
+}
+
+.nome{
+    color: #2ecc71;
+    font-family: 'Segoe UI';
+    font-size:20px;
+    margin: 8px;
+}
+
+.esquerda{
+    display: flex;
+    width: 230px;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.direita{
+    display: flex;
+    width: 700px;
+    height: 450px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 10px;
+    border-left: 1px solid #353b48 ;
+}
+
+.desc{
+    width: 650px;
+    height: 275px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 25px 20px 25px;
+    border-bottom: 1px solid #353b48 ;
+}
+
+.resto{
+    width: 650px;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    margin: 0px 25px 0px 25px
+}
+
+.ende{
+    width: 480px;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dNota{
+    width: 170px;
+    height: 120px;
+    background-color: #353b48 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aval{
+    width: 150px;
+    height: 28px;
+    margin: 2px;
+}
+
+.btn{
+    width: 150px;
+    height: 28px;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+}
+
+.desc-txt{
+    color: #2ecc71;
+    font-size: 19.5px;
+    font-family: 'Segoe UI';
+    text-align: left;
+}
+
+.aval-txt{
+    color: #2ecc71;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}
+
+.fotinho{
+    margin-bottom: 8px;
+}
+
+.nota{
+    width: 216px;
+    height: 36px;
+    background-color: #353b48;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.notaNum{
+    color: #2ecc71;
+    font-family: 'Segoe UI';
+    font-size: 27px;
+}
+
+.estrelinha{
+    margin: 10px 5px 10px 0px;
+}
+
+.infos{
+    width: 216px;
+    height: 180px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.contato{
+    color: #2ecc71;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    margin: 18px 0px;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    color: #2ecc71;
+    text-align: center;
+    margin: 5px;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+.ende-li{
+    color: #2ecc71;
+    text-align: left;
+    margin: 0px 0px;
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+.vltr{
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    font-family: 'Segoe UI';
+    transition: background-color 1s;
+    margin-bottom: 27px;
+    box-sizing: border-box;
+    height: 36px;
+}
+
+.vltr:hover{
+    color: #353b48;
+    border-bottom: 2px solid #353b48 ;
+}

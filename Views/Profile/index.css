@@ -1,0 +1,93 @@
+.tela { 
+	background-color:  #2ecc71;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #2ecc71;
+}
+
+.gambi {
+	position: fixed;
+	z-index: -1;
+	margin: 0px;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 300px;
+	background-color:  #2ecc71;
+	background-attachment: fixed;
+	background-position: top left;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
+.gambi2 {
+	position: fixed;
+	z-index: -1;
+	margin: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 300px;
+	background-color:  #2ecc71;
+	background-attachment: fixed;
+	background-position: top right;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	margin-top: 0px;
+	text-align: center;
+}
+
+.caixa {
+	margin: 0px auto;
+	max-width: 600px;
+	background-color: white;
+	padding: 30px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+	border-right-style: solid;
+	border-left-style: solid;
+}
+
+
+
+	display: block;
+}
+/*input {
+	display: block;
+	width: 100%;
+}*/
+
+button.confirmar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 9px 7px;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#2ecc70),
+		to(#2ecc70));
+	background: linear-gradient(
+		top,
+		#2ecc70 0%,
+		#2ecc70);
+	border-radius: 4px;
+	border: 1px solid #ffffff;
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 3px rgba(000,000,000,0.8);
+	text-shadow:
+		0px -1px 0px rgba(255,255,255,0),
+		0px 0px 0px rgba(000,000,000,1);
+}
+
+.botao{ 		display:flex;
+		flex-direction:center;
+		justify-content:center;
+}
+
+.divLogo { 
+	width:192px;
+	height:76px;
+	background-color: #2ecc71;
+}
