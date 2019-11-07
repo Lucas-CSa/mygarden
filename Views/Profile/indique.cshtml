@@ -1,88 +1,98 @@
-﻿
+﻿@{
+    Layout = "";
+}
 <head>
-    <link href="~/Content/indique.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Content/indique.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <div class="tela">
-		<div class="gambi"></div>
-		<div class="gambi2"></div>
-	
-        @if (ViewBag.Mensagem != null)
-        {
-            <div class="alert alert-success">@ViewBag.Mensagem</div>
-        }
+  
+        <a id="voltar" style="color: white;" href="@Url.Action("GoIndex")">Voltar</a>
+   
+    <div class="gambi">
 
-        <form method="post" action="@Url.Action("CreateProd")">
-            <div class="caixa">
-                <h1>Indique</h1>
+    </div>
+    <div class="gambi2"></div>
 
-                <input type="hidden" name="Id" id="Id"/>
+    @if (ViewBag.Mensagem != null)
+    {
+        <div class="alert alert-success">@ViewBag.Mensagem</div>
+    }
 
-                <div class="form-group">
-                    <label for="ProdNom">Nome</label>
-                    <input type="text" class="form-control" name="ProdNom" id="ProdNom" />
-                </div>
-                <div class="form-group">
-                    <label for="ProdBairro">Bairro</label>
-                    <input type="text" class="form-control" name="ProdBairro" id="ProdBairro" />
-                </div>
-                <div class="form-group">
-                    <label for="ProdEnd">Endereço</label>
-                    <input type="text" class="form-control" name="ProdEnd" id="ProdEnd" />
-                </div>
-                <div class="form-group">
-                    <label for="ProdNum">Número</label>
-                    <input type="text" class="form-control" name="ProdNum" id="ProdNum" />
-                </div>
-                <div class="form-group">
-                    <label for="ProdTel">Telefone</label>
-                    <input type="text" class="form-control" name="ProdTel" id="ProdTel" placeholder="(xx) xxxxx-xxxx">
-                </div>
+    <form method="post" action="@Url.Action("CreateProd")">
+        <div class="caixa">
+            <h1>Indique</h1>
 
-                <div class="form-group">
-                    <label for="ProdRegiao">Regiões</label>
-                    <select class="form-control" name="ProdRegiao" id="ProdRegiao">
-                        <option value="zs">Zona Sul</option>
-                        <option value="zn">Zona Norte</option>
-                        <option value="zl">Zona Leste</option>
-                        <option value="zo">Zona Oeste</option>
-                        <option value="ce">Centro</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="ProdDesc">Descrição do Produtor</label>
-                    <textarea class="form-control" name="ProdDesc" id="ProdDesc" rows="3" maxlength="400"></textarea>
-                </div>
+            <input type="hidden" name="Id" id="Id" />
 
+            <div class="form-group">
+                <label for="ProdNom">Nome</label>
+                <input type="text" class="form-control" name="ProdNom" id="ProdNom" />
+            </div>
+            <div class="form-group">
+                <label for="ProdBairro">Bairro</label>
+                <input type="text" class="form-control" name="ProdBairro" id="ProdBairro" />
+            </div>
+            <div class="form-group">
+                <label for="ProdEnd">Endereço</label>
+                <input type="text" class="form-control" name="ProdEnd" id="ProdEnd" />
+            </div>
+            <div class="form-group">
+                <label for="ProdNum">Número</label>
+                <input type="text" class="form-control" name="ProdNum" id="ProdNum" />
+            </div>
+            <div class="form-group">
+                <label for="ProdTel">Telefone</label>
+                <input type="text" class="form-control" name="ProdTel" id="ProdTel" placeholder="(xx) xxxxx-xxxx">
+            </div>
+
+            <div class="form-group">
+                <label for="ProdRegiao">Regiões</label>
+                <select class="form-control" name="ProdRegiao" id="ProdRegiao">
+                    <option value="zs">Zona Sul</option>
+                    <option value="zn">Zona Norte</option>
+                    <option value="zl">Zona Leste</option>
+                    <option value="zo">Zona Oeste</option>
+                    <option value="ce">Centro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ProdDesc">Descrição do Produtor</label>
+                <textarea class="form-control" name="ProdDesc" id="ProdDesc" rows="3" maxlength="400"></textarea>
+            </div>
+
+            <div>
                 <div>
-                    <div>
-                        <label for="exampleFormControlTextarea1">Tipo de produtos</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Frutas</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">Verduras</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">Legumes</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                        <label class="form-check-label" for="inlineCheckbox3">Outros</label>
-                    </div>
+                    <label for="exampleFormControlTextarea1">Tipo de produtos</label>
                 </div>
-
-
-                <br />
-                <div class="botao">
-                    <button type="submit">Indicar</button>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Frutas</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Verduras</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Legumes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox3">Outros</label>
                 </div>
             </div>
-        </form>
 
-        <br />
-        <br />
+
+            <br />
+            <div class="botao">
+                <button type="submit">Indicar</button>
+            </div>
+        </div>
+    </form>
+
+    <br />
+    <br />
 </div>

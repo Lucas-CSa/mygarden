@@ -42,5 +42,10 @@ namespace mygarden.Controllers
 
             return View("Index");
         }
+
+        public IActionResult GoIndex()
+        {
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
