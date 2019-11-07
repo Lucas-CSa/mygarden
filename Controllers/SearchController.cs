@@ -12,5 +12,10 @@ namespace mygarden.Controllers
         {
             return View();
         }
+
+        public IActionResult perfil()
+        {
+            return View();
+        }
     }
 }

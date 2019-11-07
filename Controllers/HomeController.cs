@@ -15,5 +15,14 @@ namespace mygarden.Controllers
             return View();
         }
 
+        public IActionResult GoProfile() {
+            return RedirectToAction("Indique", "Profile");
+        }
+
+        public IActionResult GoSearch()
+        {
+            return RedirectToAction("buscada", "Search");
+        }
+
     }
 }

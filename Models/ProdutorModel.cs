@@ -17,8 +17,8 @@ namespace mygarden.Models
 
         public string ProdNum { get; set; }
 
-        public string ProTel { get; set; }
+        public string ProdTel { get; set; }
 
-        public string ProDesc { get; set; }
+        public string ProdDesc { get; set; }
     }
 }

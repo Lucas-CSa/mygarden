@@ -5,9 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Content\indique.css" />
+    <None Include="wwwroot\Content\logo2.svg" />
+    <None Include="wwwroot\css\logo2branco.svg" />
+    <None Include="wwwroot\css\style.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="MySql.Data" Version="8.0.18" />
   </ItemGroup>
 
 </Project>
